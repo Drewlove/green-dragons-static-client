@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      I'm an app!
+      I'm the newest app yet!
     </div>
   );
 }
