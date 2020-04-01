@@ -4,7 +4,7 @@ import ListItem from '../ReusableComponents/ListItem'
 const ChallengeTypesListContainer = () => {
     
     const challengesList = [
-        {name: 'Challenge Super New', path: '/challenges/challenge-1', id: 1}, 
+        {name: 'The best new', path: '/challenges/challenge-1', id: 1}, 
     ]
 
     const renderList = () => {
