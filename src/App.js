@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom'
+import {Route, BrowserRouter} from 'react-router-dom'
 import Nav from './ReusableComponents/Nav'
 import ChallengesRouting from './Routing/ChallengesRouting'
 
@@ -7,10 +7,10 @@ import ChallengesRouting from './Routing/ChallengesRouting'
 // import UsersListContainer from './ListContainers/UsersListContainer'
 // import CommunitiesListContainer from './ListContainers/CommunitiesListContainer'
 
-function App() {
+const App = () => {
   return (
     <>
-    <Nav/>
+      <Nav/>
       <Route path='/challenges' component={ChallengesRouting} />
     </>
   );
