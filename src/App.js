@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Nav from './ReusableComponents/Nav'
 import ChallengesRouting from './Routing/ChallengesRouting'
 
