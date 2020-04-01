@@ -10,7 +10,6 @@ import ChallengesRouting from './Routing/ChallengesRouting'
 const App = () => {
   return (
     <>
-      <h1>BIG GUYS ARE COOL!</h1>
       <Nav/>
       <Route path='/challenges' component={ChallengesRouting} />
     </>
