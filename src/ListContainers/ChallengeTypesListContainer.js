@@ -14,7 +14,6 @@ const ChallengeTypesListContainer = () => {
             return (
             <ListItem key={listItem.id} path={listItem.path}>
                 {listItem.name}
-                <div>Other Details</div>
             </ListItem>
             )
         })
