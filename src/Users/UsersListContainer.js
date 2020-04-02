@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from '../ReusableComponents/ListItem'
+import ListItem from '../_Common/ListItem'
 
 const UsersListContainer = () => {
     const usersList = [

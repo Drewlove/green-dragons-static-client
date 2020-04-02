@@ -77,7 +77,7 @@ form .radio-wrapper{
   align-items: center; 
 }
 
-.list-item-primary{
+.common-list-item{
   margin: 10px auto; 
   list-style: none; 
   border: 1px solid black; 
@@ -88,17 +88,17 @@ form .radio-wrapper{
   border-radius: 5px; 
 }
 
-.list-item-primary a{
+.common-list-item a{
   display: flex;
   justify-content: space-around;
 }
 
-.list-item-primary:hover{
+.common-list-item:hover{
   box-shadow: 2px 2px 2px black; 
   cursor: pointer; 
 }
 
-.list-item-primary:hover a{
+.common-list-item:hover a{
   color: gray; 
 }
 
@@ -110,4 +110,18 @@ form .radio-wrapper{
 
 .nav-section a{
   margin-left: 10px; 
+}
+
+.user-nav-tabs{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.user-nav-tabs>a{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
 }

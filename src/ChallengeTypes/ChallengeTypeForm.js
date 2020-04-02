@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChallengesForm = () => {
+const ChallengeTypeForm = () => {
     return(
     <form>
         <fieldset>
@@ -42,4 +42,4 @@ const ChallengesForm = () => {
     )
 }
 
-export default ChallengesForm
+export default ChallengeTypeForm

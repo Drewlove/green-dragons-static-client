@@ -6,8 +6,8 @@ const Nav = () => {
         <nav>
             <section className='nav-section'>
                 <Link to='/challenges'>Challenges</Link>
-                <Link to='/users'>Users</Link>
                 <Link to='/communities'>Communities</Link>
+                <Link to='/users'>Users</Link>
             </section>
         </nav>  
     )
