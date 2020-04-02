@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from '../_Common/ListItem'
+import ListContainer from '../_Common/ListContainer'
 
 const UsersListContainer = () => {
     const usersList = [
@@ -7,22 +7,14 @@ const UsersListContainer = () => {
         {name: 'User 2', path: '/users/user-2', id: 2}, 
         {name: 'User 3', path: '/users/user-3', id: 3}
     ]
-
-    const renderList = () => {
-        return usersList.map( listItem => {
-            return (
-            <ListItem key={listItem.id} path={listItem.path}>
-                {listItem.name}
-            </ListItem>
-            )
-        })
-    }
     
     return(
-    <>
-    <h1>Users</h1>
-        {renderList()}
-    </>
+        <ListContainer 
+        title='Users' 
+        listData={usersList}
+        propertiesToDisplay={['name']} 
+        listClassName='users-list'
+        />
     )
 }
 

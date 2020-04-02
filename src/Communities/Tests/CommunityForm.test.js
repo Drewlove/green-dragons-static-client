@@ -1,20 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter} from 'react-router-dom'
-import App from './App'
+import CommunityForm from '../CommunityForm'
 
-describe('App Component', () => {
+describe('Community Form', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <BrowserRouter>
-                <App/>
-            </BrowserRouter>, 
+            <CommunityForm />, 
             div
         )
         ReactDOM.unmountComponentAtNode(div)
     })
 })
-
-
-

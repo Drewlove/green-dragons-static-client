@@ -2,7 +2,7 @@ import React from 'react'
 
 const ListItem = (props) => {
     return(
-    <li className='common-list-item'>
+    <li className='list-container-primary-item'>
         <a href={props.path}>
             {props.children}
         </a> 

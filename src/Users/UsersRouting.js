@@ -1,14 +1,18 @@
 import React from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import UsersListContainer from './UsersListContainer'
-import UserPage from './UserPage'
+import UserNavTabs from './UserNavTabs'
+import UserFormProfile from './UserFormProfile'
+import UserFormCommunities from './UserFormCommunities'
 
 const UsersRouting = () => {
     return(
-        <Switch>
-            <Route path='/users/:user_id/' component={UserPage} />
-            <Route path='/users/' component={UsersListContainer} />
-        </Switch>
+        <>
+            <Route exact path='/users/' component={UsersListContainer} />
+            <Route path='/users/:user_id' component={UserNavTabs}/>
+            <Route path='/users/:user_id/profile' component={UserFormProfile}/>
+            <Route path='/users/:user_id/communities' component={UserFormCommunities}/>
+        </>
         )
     }
 

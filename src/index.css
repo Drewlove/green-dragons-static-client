@@ -21,27 +21,12 @@ header{
   background-color: white; 
 }
 
-h2{
-  text-align: center;
-  margin-top: 10px; 
-}
-
-h3{
-  text-align: center; 
-  margin-top: 10px;
-}
-
 form{
   max-width: 350px;
   margin: 0px auto; 
   border-radius: 5px; 
   margin-top: 25px; 
   padding: 10px; 
-}
-
-form div{
-  margin-top: 10px; 
-  display: flex; 
 }
 
 form .button-wrapper{
@@ -55,17 +40,22 @@ form button{
   font-size: 18px; 
 }
 
+form .button-save{
+  margin-left: auto; 
+}
+
 form button:hover{
   cursor: pointer;
 }
 
-form input, textarea, select{
-  width: 150px; 
+form .input-wrapper{
+  margin-top: 10px; 
+  display: flex; 
+  align-items: center; 
 }
 
 form label{
   width: 100px; 
-  font-weight: bold; 
 }
 
 form .radio{
@@ -77,7 +67,33 @@ form .radio-wrapper{
   align-items: center; 
 }
 
-.common-list-item{
+form input, textarea, select{
+  border: 1px solid black; 
+  width: 150px; 
+}
+
+form .user-form-communities-section{
+  margin-top: 10px; 
+}
+
+form .user-form-communities-subcommunity-wrapper{
+  padding: 5px; 
+}
+
+form .user-form-communities-subcommunity-wrapper-input{
+  width: auto; 
+}
+
+form .user-form-communities-subcommunity-wrapper-label{
+  width: auto; 
+}
+
+.list-container-primary{
+  padding: 0px;
+  margin: 10px;
+}
+
+.list-container-primary-item{
   margin: 10px auto; 
   list-style: none; 
   border: 1px solid black; 
@@ -88,17 +104,17 @@ form .radio-wrapper{
   border-radius: 5px; 
 }
 
-.common-list-item a{
+.list-container-primary-item a{
   display: flex;
-  justify-content: space-around;
+  margin-left: 10px; 
 }
 
-.common-list-item:hover{
+.list-container-primary-item:hover{
   box-shadow: 2px 2px 2px black; 
   cursor: pointer; 
 }
 
-.common-list-item:hover a{
+.list-container-primary-item:hover a{
   color: gray; 
 }
 

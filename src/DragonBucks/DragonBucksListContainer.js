@@ -26,9 +26,9 @@ const DragonBucksListContainer = () => {
         <h1>Dragon Bucks</h1>
         <h2>Balance</h2>
     </header>
-    <main className='dragon-bucks-main'>
-        <ul className='list'>
-        {renderList()}
+    <main>
+        <ul className='dragon-bucks-list'>
+            {renderList()}
         </ul>
     </main>
     </>
