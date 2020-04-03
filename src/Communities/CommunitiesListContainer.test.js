@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import CommunitiesListContainer from '../CommunitiesListContainer'
+import CommunitiesListContainer from './CommunitiesListContainer'
 
 describe('Communities List Container', () => {
     it('renders without crashing', () => {

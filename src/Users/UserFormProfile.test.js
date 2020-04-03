@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChallengeTypeForm from './ChallengeTypeForm'
+import UserFormProfile from './UserFormProfile'
 
-describe('Challenge Type Form', () => {
+describe('User Form Profile', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <ChallengeTypeForm />, 
-            div
+            <UserFormProfile/>,
+            div 
         )
         ReactDOM.unmountComponentAtNode(div)
     })

@@ -5,10 +5,6 @@ import ChallengesRouting from './ChallengeTypes/ChallengeTypesRouting'
 import CommunitiesRouting from './Communities/CommunitiesRouting'
 import UsersRouting from './Users/UsersRouting'
 
-// import ChallengeTypesListContainer from './ListContainers/ChallengeTypesListContainer'
-// import UsersListContainer from './ListContainers/UsersListContainer'
-// import CommunitiesListContainer from './ListContainers/CommunitiesListContainer'
-
 const App = () => {
   return (
     <>

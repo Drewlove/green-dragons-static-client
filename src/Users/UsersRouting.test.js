@@ -1,15 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter} from 'react-router-dom'
-import ChallengeTypesRouting from './ChallengeTypesRouting'
+import UsersRouting from './UsersRouting'
 
-describe('Challenge Types Routing', () => {
+describe('Users Routing', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
             <BrowserRouter>
-                <ChallengeTypesRouting />
-            </BrowserRouter>,
+                <UsersRouting/>
+            </BrowserRouter>, 
             div
         )
         ReactDOM.unmountComponentAtNode(div)

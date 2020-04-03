@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter} from 'react-router-dom'
-import CommunitiesRouting from '../CommunitiesRouting'
+import CommunitiesRouting from './CommunitiesRouting'
 
 describe('Communities Routing', () => {
     it('renders without crashing', () => {

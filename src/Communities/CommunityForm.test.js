@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import CommunityForm from '../CommunityForm'
+import CommunityForm from './CommunityForm'
 
 describe('Community Form', () => {
     it('renders without crashing', () => {

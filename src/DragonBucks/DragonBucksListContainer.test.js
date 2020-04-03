@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import DragonBucksListContainer from '../DragonBucksListContainer'
+import DragonBucksListContainer from './DragonBucksListContainer'
 
 describe('Dragon Bucks List Container', () => {
     it('renders without crashing', () => {

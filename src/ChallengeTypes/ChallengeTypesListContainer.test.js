@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChallengeTypesListContainer from '../ChallengeTypesListContainer'
+import ChallengeTypesListContainer from './ChallengeTypesListContainer'
 
 describe('Challenge Types List Container', () => {
     it('renders without crashing', () => {

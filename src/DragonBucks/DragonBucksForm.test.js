@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import DragonBucksForm from '../DragonBucksForm'
+import DragonBucksForm from './DragonBucksForm'
 
 describe('Dragon Busk Form', () => {
     it('renders without crashing', () => {
