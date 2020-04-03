@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserForm = () => {
+const UserFormProfile = () => {
     return(
     <main>
         <form className='user-form-profile'>
@@ -30,4 +30,4 @@ const UserForm = () => {
     )
 }
 
-export default UserForm
+export default UserFormProfile

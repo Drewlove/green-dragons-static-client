@@ -1,22 +1,14 @@
 import React from 'react'
-import ListItem from './ListItem'
+import ListMainItem from './ListMainItem'
 
-const ListContainer = (props) => {
-
-    const renderHeader = () => {
-        return(
-        <header>
-            <h1>{props.header}</h1>
-        </header>
-        )
-    }
+const ListMainWrapper = (props) => {
     
     const renderList = (listData) => {
         return listData.map(listItem => {
             return (
-            <ListItem key={listItem.id} path={listItem.path}>
+            <ListMainItem key={listItem.id} path={listItem.path}>
                 {displayText(listItem)}
-            </ListItem>
+            </ListMainItem>
             )
         })
     }
@@ -31,9 +23,8 @@ const ListContainer = (props) => {
     
     return(
     <>
-        {props.header ? renderHeader() : null }
         <main>
-            <ul className={`list-container-primary ${props.listClassName}`}>
+            <ul className={`list-main-wrapper ${props.listClassName}`}>
                 {renderList(props.listData)}
             </ul>
         </main>
@@ -41,4 +32,4 @@ const ListContainer = (props) => {
     )
 }
 
-export default ListContainer
+export default ListMainWrapper

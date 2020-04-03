@@ -8,15 +8,23 @@ const DragonBucksForm = () => {
                 <legend>
                     <h2>Dragon Bucks</h2>
                 </legend>
-                <div>
+                <div className='input-wrapper'>
+                    <label>User</label>
+                    <select>
+                        <option value='user-1'>User 1</option>  
+                        <option value='user-2'>User 2</option>  
+                        <option value='user-3'>User 3</option>  
+                    </select>
+                </div>
+                <div className='input-wrapper'>
                     <label>Amount</label>
                     <input type='number'/>
                 </div>
-                <div>
+                <div className='input-wrapper'>
                     <label>Date</label>
                     <input type='text'/>
                 </div>
-                <div>
+                <div className='input-wrapper'>
                     <label>Notes</label>
                     <textarea />
                 </div>

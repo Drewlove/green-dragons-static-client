@@ -52,7 +52,6 @@ form button:hover{
 form .input-wrapper{
   margin-top: 10px; 
   display: flex; 
-  align-items: center; 
 }
 
 form label{
@@ -89,12 +88,12 @@ form .user-form-communities-subcommunity-wrapper-label{
   width: auto; 
 }
 
-.list-container-primary{
+.list-main-wrapper{
   padding: 0px;
   margin: 10px;
 }
 
-.list-container-primary-item{
+.list-main-wrapper-item{
   margin: 10px auto; 
   list-style: none; 
   border: 1px solid black; 
@@ -105,22 +104,19 @@ form .user-form-communities-subcommunity-wrapper-label{
   border-radius: 5px; 
 }
 
-.list-container-primary-item a{
+.list-main-wrapper-item a{
   display: flex;
   margin-left: 10px;
   justify-content: space-between;
 }
 
-.list-container-primary-item:hover{
+.list-main-wrapper-item:hover{
   box-shadow: 2px 2px 2px black; 
   cursor: pointer; 
-}
-
-.list-container-primary-item:hover a{
   color: gray; 
 }
 
-.list-container-primary-item div{
+.list-main-wrapper-item div{
   margin: 0px 20px; 
 }
 

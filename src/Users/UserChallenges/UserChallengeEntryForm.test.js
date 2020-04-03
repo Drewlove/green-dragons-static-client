@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import DragonBucksForm from './DragonBucksForm'
+import UserChallengeEntryForm from './UserChallengeEntryForm'
 
-describe('Dragon Busk Form', () => {
+describe('User Challenge Entries List Container', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <DragonBucksForm />, 
+            <UserChallengeEntryForm />,
             div
         )
         ReactDOM.unmountComponentAtNode(div)

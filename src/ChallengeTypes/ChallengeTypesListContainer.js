@@ -1,5 +1,5 @@
 import React from 'react'
-import ListContainer from '../_Common/ListContainer'
+import ListMainWrapper from '../_Common/ListMainWrapper'
 
 const ChallengeTypesListContainer = () => {
     
@@ -11,7 +11,7 @@ const ChallengeTypesListContainer = () => {
     ]
     
     return(
-        <ListContainer  
+        <ListMainWrapper 
         listData={challengesList}
         propertiesToDisplay={['name']} 
         listClassName='challenges-list'
