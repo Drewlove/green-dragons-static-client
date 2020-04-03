@@ -11,8 +11,7 @@ const CommunitiesListContainer = () => {
     ]
     
     return(
-        <ListContainer 
-        title='Communities' 
+        <ListContainer  
         listData={communitiesList}
         propertiesToDisplay={['name']} 
         listClassName='communities-list'

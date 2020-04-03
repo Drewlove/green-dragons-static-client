@@ -10,7 +10,6 @@ const UsersListContainer = () => {
     
     return(
         <ListContainer 
-        title='Users' 
         listData={usersList}
         propertiesToDisplay={['name']} 
         listClassName='users-list'

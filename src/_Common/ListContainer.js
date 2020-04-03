@@ -2,6 +2,15 @@ import React from 'react'
 import ListItem from './ListItem'
 
 const ListContainer = (props) => {
+
+    const renderHeader = () => {
+        return(
+        <header>
+            <h1>{props.header}</h1>
+        </header>
+        )
+    }
+    
     const renderList = (listData) => {
         return listData.map(listItem => {
             return (
@@ -22,14 +31,12 @@ const ListContainer = (props) => {
     
     return(
     <>
-    <header>
-        <h1>{props.title}</h1>
-    </header>
-    <main>
-        <ul className={`list-container-primary ${props.listClassName}`}>
-            {renderList(props.listData)}
-        </ul>
-    </main>
+        {props.header ? renderHeader() : null }
+        <main>
+            <ul className={`list-container-primary ${props.listClassName}`}>
+                {renderList(props.listData)}
+            </ul>
+        </main>
     </>
     )
 }

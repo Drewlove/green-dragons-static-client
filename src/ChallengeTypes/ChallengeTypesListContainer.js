@@ -11,8 +11,7 @@ const ChallengeTypesListContainer = () => {
     ]
     
     return(
-        <ListContainer 
-        title='Challenges' 
+        <ListContainer  
         listData={challengesList}
         propertiesToDisplay={['name']} 
         listClassName='challenges-list'

@@ -16,9 +16,10 @@ nav{
 }
 
 header{
-  position: sticky; 
-  top: 50px; 
-  background-color: white; 
+  position: sticky;
+  top: 50px;
+  background-color: white;
+  text-align: center;
 }
 
 form{
@@ -106,7 +107,8 @@ form .user-form-communities-subcommunity-wrapper-label{
 
 .list-container-primary-item a{
   display: flex;
-  margin-left: 10px; 
+  margin-left: 10px;
+  justify-content: space-between;
 }
 
 .list-container-primary-item:hover{
@@ -118,26 +120,42 @@ form .user-form-communities-subcommunity-wrapper-label{
   color: gray; 
 }
 
-.nav-section{
-  display: flex;
-  align-items: center;
-  height: 100%;
+.list-container-primary-item div{
+  margin: 0px 20px; 
 }
 
-.nav-section a{
+nav{
+  background-color: lightgray;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+nav a{
   margin-left: 10px; 
 }
 
+nav .active{
+  color: white; 
+}
+
 .user-nav-tabs{
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 18px;
-    margin-top: 25px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin: 25px auto;
 }
 
 .user-nav-tabs>a{
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
+}
+
+.user-nav-tabs .active{
+  background-color: lightgrey;
+  color: white;
 }
