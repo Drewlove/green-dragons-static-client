@@ -10,18 +10,21 @@ import UserChallengeEntryForm from './UserChallenges/UserChallengeEntryForm'
 import UserDragonBucksList from './UserDragonBucks/UserDragonBucksListContainer'
 import UserDragonBucksForm from './UserDragonBucks/UserDragonBucksForm'
 
-const UsersRouting = () => {
+const UsersRouting = (props) => {
+
+    const rootPath = `/users/:user_id`
+    console.log(props, props.match.params)
     return(
     <>
         <Route exact path='/users/' component={UsersListContainer} />
-        <Route path='/users/:user_id' component={UserNavTabs}/>
-        <Route exact path='/users/:user_id/challenges/' component={UserChallengesListContainer}/>
-        <Route exact path='/users/:user_id/challenges/:challenge_id' component={UserChallengeEntriesListContainer}/>
-        <Route path='/users/:user_id/challenges/:challenge_id/challenge-entry/:challenge_entry_id' component={UserChallengeEntryForm}/>
-        <Route exact path='/users/:user_id/dragon-bucks/' component={UserDragonBucksList}/>
-        <Route path='/users/:user_id/dragon-bucks/:dragon_bucks_transaction_id' component={UserDragonBucksForm}/>
-        <Route path='/users/:user_id/profile' component={UserFormProfile}/>
-        <Route path='/users/:user_id/communities' component={UserFormCommunities}/>
+        <Route path={`${rootPath}`} component={UserNavTabs}/>
+        <Route exact path={`${rootPath}/challenges/`} component={UserChallengesListContainer}/>
+        <Route exact path={`${rootPath}/challenges/:challenge_id`} component={UserChallengeEntriesListContainer}/>
+        <Route path={`${rootPath}/challenge-entry/:challenge_entry_id`} component={UserChallengeEntryForm}/>
+        <Route exact path={`${rootPath}/dragon-bucks/`} component={UserDragonBucksList}/>
+        <Route path={`${rootPath}/dragon-bucks/:dragon_bucks_transaction_id`} component={UserDragonBucksForm}/>
+        <Route path={`${rootPath}/profile`} component={UserFormProfile}/>
+        <Route path={`${rootPath}/communities`} component={UserFormCommunities}/>
     </> 
     )
 }

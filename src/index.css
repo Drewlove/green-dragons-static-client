@@ -124,8 +124,21 @@ form .user-form-communities-subcommunity-wrapper-label{
   min-height: 200px;
 }
 
+.modal-content-close-button{
+  float: right; 
+}
+
 .modal-content-links-wrapper{
   
+}
+
+.modal-content-link{
+  display: block; 
+  padding: 5px; 
+}
+
+.modal-content-link.indent{
+  margin-left: 25px; 
 }
 
 nav{

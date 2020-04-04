@@ -23,7 +23,7 @@ class Nav extends Component{
                 <button className='new-button' onClick={() => this.toggleModalDisplay()}>New</button>
                 {this.state.displayModal ? 
                 <Modal toggleModalDisplay={() => this.toggleModalDisplay()}>
-                    <ModalContentLinksWrapper  />
+                    <ModalContentLinksWrapper  toggleModalDisplay={() => this.toggleModalDisplay()}/>
                 </Modal> 
                 : null}
             </nav>  
