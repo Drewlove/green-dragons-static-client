@@ -1,5 +1,5 @@
 import React from 'react'
-import ListMainWrapper from '../../_Common/ListMainWrapper'
+import ListMainWrapper from '../../_Common/ListWrapper'
 
 const UserDragonBucksListContainer = () => {
     
@@ -11,13 +11,13 @@ const UserDragonBucksListContainer = () => {
     ]
     
     return(
-        <>
-        <ListMainWrapper  
-        listData={userDragonBucksList}
-        propertiesToDisplay={['amount', 'date']} 
-        listClassName='user-dragon-bucks-list'
-        />
-        </>
+        <main>
+            <ListMainWrapper  
+            listData={userDragonBucksList}
+            propertiesToDisplay={['amount', 'date']} 
+            listClassName='user-dragon-bucks-list'
+            />
+        </main>
         )
 }
 

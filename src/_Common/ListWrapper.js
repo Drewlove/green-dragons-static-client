@@ -1,14 +1,14 @@
 import React from 'react'
-import ListMainItem from './ListMainItem'
+import ListItem from './ListItem'
 
 const ListMainWrapper = (props) => {
     
     const renderList = (listData) => {
         return listData.map(listItem => {
             return (
-            <ListMainItem key={listItem.id} path={listItem.path}>
+            <ListItem key={listItem.id} path={listItem.path}>
                 {displayText(listItem)}
-            </ListMainItem>
+            </ListItem>
             )
         })
     }
@@ -22,13 +22,9 @@ const ListMainWrapper = (props) => {
     }
     
     return(
-    <>
-        <main>
-            <ul className={`list-main-wrapper ${props.listClassName}`}>
-                {renderList(props.listData)}
-            </ul>
-        </main>
-    </>
+        <ul className={`list-wrapper ${props.listClassName}`}>
+            {renderList(props.listData)}
+        </ul>
     )
 }
 

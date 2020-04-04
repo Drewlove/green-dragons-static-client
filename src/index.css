@@ -7,21 +7,6 @@ a{
   color: black; 
 }
 
-nav{
-  position: sticky; 
-  top: 0px; 
-  background-color: lightgray;
-  height: 50px; 
-  width: 100%; 
-}
-
-header{
-  position: sticky;
-  top: 50px;
-  background-color: white;
-  text-align: center;
-}
-
 form{
   max-width: 350px;
   margin: 0px auto; 
@@ -88,12 +73,12 @@ form .user-form-communities-subcommunity-wrapper-label{
   width: auto; 
 }
 
-.list-main-wrapper{
+.list-wrapper{
   padding: 0px;
   margin: 10px;
 }
 
-.list-main-wrapper-item{
+.list-item{
   margin: 10px auto; 
   list-style: none; 
   border: 1px solid black; 
@@ -104,19 +89,19 @@ form .user-form-communities-subcommunity-wrapper-label{
   border-radius: 5px; 
 }
 
-.list-main-wrapper-item a{
+.list-item a{
   display: flex;
   margin-left: 10px;
   justify-content: space-between;
 }
 
-.list-main-wrapper-item:hover{
+.list-item:hover{
   box-shadow: 2px 2px 2px black; 
   cursor: pointer; 
   color: gray; 
 }
 
-.list-main-wrapper-item div{
+.list-item div{
   margin: 0px 20px; 
 }
 
@@ -130,13 +115,27 @@ form .user-form-communities-subcommunity-wrapper-label{
   width: 100%;
 }
 
+.modal-content{
+  background-color: white;
+  margin: 50px auto;
+  max-width: 500px;
+  width: 75%;
+  height: auto;
+  min-height: 200px;
+}
+
+.modal-content-links-wrapper{
+
+}
+
 nav{
-  background-color: lightgray;
-  height: 50px;
-  display: flex;
-  align-items: center;
   position: sticky;
   top: 0px;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  height: 50px;
+  z-index: 1; 
 }
 
 nav a{
@@ -145,6 +144,14 @@ nav a{
 
 nav .active{
   color: white; 
+}
+
+.user-challenge-entries-challenge-title{
+  position: sticky;
+  z-index: 0; 
+  top: 50px;
+  background-color: white;
+  text-align: center;
 }
 
 .user-nav-tabs{

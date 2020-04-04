@@ -1,5 +1,5 @@
 import React from 'react'
-import ListMainWrapper from '../_Common/ListMainWrapper'
+import ListMainWrapper from '../_Common/ListWrapper'
 
 const UsersListContainer = () => {
     const usersList = [
@@ -9,11 +9,13 @@ const UsersListContainer = () => {
     ]
     
     return(
-        <ListMainWrapper
-        listData={usersList}
-        propertiesToDisplay={['name']} 
-        listClassName='users-list'
-        />
+        <main>
+            <ListMainWrapper
+            listData={usersList}
+            propertiesToDisplay={['name']} 
+            listClassName='users-list'
+            />
+        </main>
     )
 }
 

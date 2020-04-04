@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ListMainItem = (props) => {
+const ListItem = (props) => {
     return(
-    <li className='list-main-wrapper-item'>
+    <li className='list-item'>
         <a href={props.path}>
             {props.children}
         </a> 
@@ -10,4 +10,4 @@ const ListMainItem = (props) => {
     )
 }
 
-export default ListMainItem
+export default ListItem

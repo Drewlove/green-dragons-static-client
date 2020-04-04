@@ -1,5 +1,5 @@
 import React from 'react'
-import ListMainWrapper from '../_Common/ListMainWrapper'
+import ListWrapper from '../_Common/ListWrapper'
 
 const CommunitiesListContainer = () => {
     
@@ -11,11 +11,13 @@ const CommunitiesListContainer = () => {
     ]
     
     return(
-        <ListMainWrapper 
-        listData={communitiesList}
-        propertiesToDisplay={['name']} 
-        listClassName='communities-list'
-        />
+        <main>
+            <ListWrapper 
+            listData={communitiesList}
+            propertiesToDisplay={['name']} 
+            listClassName='communities-list'
+            />
+        </main>
         )
 }
 

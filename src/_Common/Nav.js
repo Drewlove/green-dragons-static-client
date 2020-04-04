@@ -19,6 +19,7 @@ class Nav extends Component{
                 <NavLink activeClassName='active' to='/challenges'>Challenges</NavLink>
                 <NavLink activeClassName='active' to='/communities'>Communities</NavLink>
                 <NavLink activeClassName='active' to='/users'>Users</NavLink>
+                {this.props.children}
                 <button className='new-button' onClick={() => this.toggleModalDisplay()}>New</button>
                 {this.state.displayModal ? 
                 <Modal toggleModalDisplay={() => this.toggleModalDisplay()}>

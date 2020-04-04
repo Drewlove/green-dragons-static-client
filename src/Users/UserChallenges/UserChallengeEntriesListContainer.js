@@ -1,6 +1,6 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
-import ListMainWrapper from '../../_Common/ListMainWrapper'
+import ListWrapper from '../../_Common/ListWrapper'
 
 
 const UserChallengesListContainer = (props) => {
@@ -15,16 +15,16 @@ const UserChallengesListContainer = (props) => {
     ]
     
     return(
-        <>
-        <header>
+        <main>
+        <section className='user-challenge-entries-challenge-title'>
             <h1>{userChallengeEntriesList[0].challengeName}</h1>
-        </header>
-        <ListMainWrapper
+        </section>
+        <ListWrapper
         listData={userChallengeEntriesList}
         propertiesToDisplay={['entry', 'date']} 
         listClassName='user-challenge-entries-list'
         />
-        </>
+        </main>
         )
 }
 

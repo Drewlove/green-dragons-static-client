@@ -1,8 +1,8 @@
 import React from 'react'
-import ListMainWrapper from '../../_Common/ListMainWrapper'
+import ListMainWrapper from '../../_Common/ListWrapper'
 
 
-const UserChallengesListContainer = (props) => {
+const UserChallengesListContainer = () => {
 
     const userChallengesList = [
         {name: 'Challenge 1', path: `challenges/challenge-1`, id: 1}, 
@@ -12,13 +12,13 @@ const UserChallengesListContainer = (props) => {
     ]
     
     return(
-        <>
-        <ListMainWrapper 
-        listData={userChallengesList}
-        propertiesToDisplay={['name']} 
-        listClassName='user-challenges-list'
-        />
-        </>
+        <main>
+            <ListMainWrapper 
+            listData={userChallengesList}
+            propertiesToDisplay={['name']} 
+            listClassName='user-challenges-list'
+            />
+        </main>
         )
 }
 
