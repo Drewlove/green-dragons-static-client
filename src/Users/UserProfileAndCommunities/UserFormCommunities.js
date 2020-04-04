@@ -24,7 +24,7 @@ const UserFormCommunities = () => {
     const renderCommunities = () => {
         return communities.map(community=> {
             return(
-            <section className='user-form-communities-section' key={community.id}>
+            <section className='user-form-communities-wrapper' key={community.id}>
                 <h3>{community.name}</h3>
                 {renderSubcommunities(community.subcommunities)}
             </section>

@@ -1,11 +1,16 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 import Modal from './Modal'
+import ModalContentFormLinks from './ModalContentFormLinks'
 
 class Nav extends Component{
+    state = {
+        displayModal: false, 
+    }
 
-    handleClick(){
-        console.log('clicking')
+    toggleModalDisplay(){
+        const displayModal = !this.state.displayModal
+        this.setState({displayModal})
     }
 
     render(){
@@ -14,8 +19,12 @@ class Nav extends Component{
                 <NavLink activeClassName='active' to='/challenges'>Challenges</NavLink>
                 <NavLink activeClassName='active' to='/communities'>Communities</NavLink>
                 <NavLink activeClassName='active' to='/users'>Users</NavLink>
-                <button className='new-button' onClick={()=> this.handleClick()}>New</button>
-                <Modal />
+                <button className='new-button' onClick={() => this.toggleModalDisplay()}>New</button>
+                {this.state.displayModal ? 
+                <Modal toggleModalDisplay={() => this.toggleModalDisplay()}>
+                    <ModalContentFormLinks />
+                </Modal> 
+                : null}
             </nav>  
         )
     }

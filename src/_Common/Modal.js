@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Modal = () => {
+const Modal = (props) => {
     return(
-    <section>
-        <div>
-            <p>Modal Text</p>
+    <section className='modal-wrapper'>
+        <div className='modal-content'>
+            <button  onClick={()=>props.toggleModalDisplay()} className='modal-content-close-button'>
+                X
+            </button>
+            
         </div>
     </section>
     )
