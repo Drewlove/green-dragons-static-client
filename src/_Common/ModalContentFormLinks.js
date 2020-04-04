@@ -8,7 +8,7 @@ const ModalContentFormLinks = () => {
             <Link to=''>Challenge Type</Link>
             <Link to=''>User</Link>
             <Link to=''>Challenge Entry</Link>
-            <Link to=''>Transaction</Link>
+            <Link to=''>Cool things</Link>
         </>
     )
 }
