@@ -5,7 +5,7 @@ import ChallengesRouting from './ChallengeTypes/ChallengeTypesRouting'
 import CommunitiesRouting from './Communities/CommunitiesRouting'
 import UsersRouting from './Users/UsersRouting'
 import Modal from './_Common/Modal'
-import ModalContentFormLinks from './_Common/ModalContentFormLinks'
+import ModalContentFormLinks from './_Common/ModalContentLinksWrapper'
 
 class App extends Component{
 

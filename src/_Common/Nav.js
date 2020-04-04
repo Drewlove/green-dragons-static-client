@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {NavLink} from 'react-router-dom'
 import Modal from './Modal'
-import ModalContentFormLinks from './ModalContentFormLinks'
+import ModalContentLinksWrapper from './ModalContentLinksWrapper'
 
 class Nav extends Component{
     state = {
@@ -23,7 +23,7 @@ class Nav extends Component{
                 <button className='new-button' onClick={() => this.toggleModalDisplay()}>New</button>
                 {this.state.displayModal ? 
                 <Modal toggleModalDisplay={() => this.toggleModalDisplay()}>
-                    <ModalContentFormLinks />
+                    <ModalContentLinksWrapper  />
                 </Modal> 
                 : null}
             </nav>  
