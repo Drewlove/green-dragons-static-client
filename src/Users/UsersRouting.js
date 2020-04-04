@@ -13,7 +13,6 @@ import UserDragonBucksForm from './UserDragonBucks/UserDragonBucksForm'
 const UsersRouting = (props) => {
 
     const rootPath = `/users/:user_id`
-    console.log(props, props.match.params)
     return(
     <>
         <Route exact path='/users/' component={UsersListContainer} />
