@@ -7,7 +7,7 @@ const Modal = (props) => {
             <button  onClick={()=>props.toggleModalDisplay()} className='modal-content-close-button'>
                 X
             </button>
-            
+            {props.children}
         </div>
     </section>
     )
