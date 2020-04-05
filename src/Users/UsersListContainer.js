@@ -31,8 +31,9 @@ const UsersListContainer = () => {
                             <img className='users-list-item-link-icon' alt='challenges icon' src={ChallengesIcon}/>
                             <p className='users-list-item-link-tooltip'>Challenges</p>
                         </Link>
-                        <Link className='users-list-item-link' to={`/users/${key.id}/dragon-bucks`}>
-                            <span>$100.00</span>
+                        <Link className='users-list-item-link-transactions' to={`/users/${key.id}/dragon-bucks`}>
+                            <div >$100.00</div>
+                            <p className='users-list-item-link-tooltip'>Transactions</p>
                         </Link>
                     </div>
                 </li>

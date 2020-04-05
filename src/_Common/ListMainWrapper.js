@@ -6,7 +6,6 @@ const ListMainWrapper = (props) => {
     const renderList = (listData) => {
         return listData.map(listItem => {
             const tableRowId = listItem[`${props.tableName}_id`]
-            console.log(listItem, props.tableName, props.user_challenges_id)
             return (
             <ListMainItem key={tableRowId} path={`${props.rootPath}/${tableRowId}`}>
                 {displayText(listItem)}

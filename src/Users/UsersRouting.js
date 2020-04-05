@@ -21,7 +21,7 @@ const UsersRouting = (props) => {
         <Route path={`${rootPath}/challenges/:challenges_id`} component={UserChallengeEntriesListContainer}/>
         <Route path={`${rootPath}/user-challenges/:user_challenges_id`} component={UserChallengeEntryForm}/>
         <Route exact path={`${rootPath}/dragon-bucks/`} component={UserDragonBucksList}/>
-        <Route path={`${rootPath}/dragon-bucks/:dragon_bucks_id`} component={UserDragonBucksForm}/>
+        <Route path={`${rootPath}/user-dragon-bucks/:dragon_bucks_id`} component={UserDragonBucksForm}/>
     </> 
     )
 }

@@ -75,10 +75,66 @@ form .user-form-communities-subcommunity-wrapper-label{
   width: auto; 
 }
 
+.communities-list-container{
+
+}
+
+.communities-list-item-view-subcommunities>.communities-list-item-subcommunities-list{
+  display: block; 
+}
+
+.communities-list-item-button{
+  border: 0px; 
+  background-color: white; 
+  font-size: 24px;
+}
+
+.communities-list-item-community-wrapper{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  min-width: 150px;
+  max-width: 500px;
+}
+
+.communities-list-item-link-wrapper{
+  display: flex;
+  width: 100%; 
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid black;
+  border-radius: 5px; 
+}
+
+.communities-list-item-link{
+  margin: 0px 20px; 
+}
+
+.communities-list-item-subcommunities-list{
+  border: 1px solid black;
+  max-width: 350px;
+  margin: 10px auto;
+  display: none; 
+}
+
+.communities-list-item-subcommunities-list h2{
+  text-align: center; 
+}
+
+.communities-list-item-subcommunities-list-item{
+  padding: 5px;
+  margin: 5px auto;
+  max-width: 300px;
+  height: 35px;
+  line-height: 30px;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .list-main-wrapper{
   padding: 0px;
   margin: 10px;
-  list-style: none; 
 }
 
 .list-main-item{
@@ -192,14 +248,21 @@ nav .active{
 
 .users-list-item-link:hover .users-list-item-link-tooltip{
   visibility: initial; 
+}
 
+.users-list-item-link-transactions:hover .users-list-item-link-tooltip{
+  visibility: initial; 
 }
 
 .users-list-item-link-icon{
   display: block;
   height: 40px;
   margin: auto;
-  margin-top: 10px;
+}
+
+.users-list-item-link-transactions{
+  margin-top: 20px;
+  text-align: center;
 }
 
 .users-list-item-link-tooltip{
@@ -207,7 +270,7 @@ nav .active{
   background-color: green;
   color: white;
   line-height: 20px;
-  margin-top: 2px;
+  margin-top: 5px;
   padding: 0px 5px;
   border-radius: 5px;
 }
@@ -215,7 +278,7 @@ nav .active{
 .users-list-item-name{
   margin-left: 10px;
   width: 100%;
-  max-width: 175px;
+  min-width: 75px;
 }
 
 /* .user-nav-tabs{
