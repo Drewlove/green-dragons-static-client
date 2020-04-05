@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ListItem from './ListItem'
+import ListMainItem from './ListMainItem'
 
 describe('List Main Item', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <ListItem/>,
+            <ListMainItem/>,
             div
         )
         ReactDOM.unmountComponentAtNode(div)

@@ -1,18 +1,22 @@
 import React from 'react'
-import ListMainWrapper from '../../_Common/ListWrapper'
+import ListMainWrapper from '../../_Common/ListMainWrapper'
 
-const UserDragonBucksListContainer = () => {
+const UserDragonBucksListContainer = (props) => {
+
+    const {users_id} = props.match.params
     
     const userDragonBucksList = [
-        {amount: '$25.00', date: '03/01/2020', path: 'dragon-bucks/1', id: 1}, 
-        {amount: '$25.00', date: '03/11/2020', path: 'dragon-bucks/2', id: 2},
-        {amount: '$25.00', date: '03/21/2020', path: 'dragon-bucks/3', id: 3},
-        {amount: '$-10.00', date: '03/27/2020', path: 'dragon-bucks/4', id: 4}  
+        {amount: '$25.00', date: '03/01/2020', users_dragon_bucks_id: 1}, 
+        {amount: '$25.00', date: '03/11/2020', users_dragon_bucks_id: 2},
+        {amount: '$25.00', date: '03/21/2020', users_dragon_bucks_id: 3},
+        {amount: '$-10.00', date: '03/27/2020', users_dragon_bucks_id: 4}  
     ]
     
     return(
         <main>
-            <ListMainWrapper  
+            <ListMainWrapper
+            rootPath={`/users/${users_id}/users-dragon-bucks`}
+            tableName='users_dragon_bucks'
             listData={userDragonBucksList}
             propertiesToDisplay={['amount', 'date']} 
             listClassName='user-dragon-bucks-list'

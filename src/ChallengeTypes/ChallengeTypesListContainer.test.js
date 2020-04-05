@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ChallengeTypesListContainer from './ChallengeTypesListContainer'
 
-describe('Challenge Types List Container', () => {
+describe('Challenge Types List Wrapper', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(

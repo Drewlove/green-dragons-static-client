@@ -16,6 +16,7 @@ class Nav extends Component{
     render(){
         return(
             <nav>
+                <NavLink activeClassName='active' to='/Home'>Home</NavLink>
                 <NavLink activeClassName='active' to='/challenges'>Challenges</NavLink>
                 <NavLink activeClassName='active' to='/communities'>Communities</NavLink>
                 <NavLink activeClassName='active' to='/users'>Users</NavLink>

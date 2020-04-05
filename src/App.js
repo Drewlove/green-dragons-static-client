@@ -4,6 +4,7 @@ import Nav from './_Common/Nav'
 import ChallengesRouting from './ChallengeTypes/ChallengeTypesRouting'
 import CommunitiesRouting from './Communities/CommunitiesRouting'
 import UsersRouting from './Users/UsersRouting'
+import HomePage from './HomePage'
 
 class App extends Component{
 
@@ -12,6 +13,7 @@ class App extends Component{
     return (
       <>
         <Nav />
+        <Route path='/Home' component={HomePage} />
         <Route path='/challenges' component={ChallengesRouting} />
         <Route path='/communities' component={CommunitiesRouting} />
         <Route path='/users' component={UsersRouting} />

@@ -1,14 +1,16 @@
 import React from 'react'
-import ListItem from './ListItem'
+import ListMainItem from './ListMainItem'
 
 const ListMainWrapper = (props) => {
     
     const renderList = (listData) => {
         return listData.map(listItem => {
+            const tableRowId = listItem[`${props.tableName}_id`]
+            console.log(listItem, props.tableName, props.user_challenges_id)
             return (
-            <ListItem key={listItem.id} path={listItem.path}>
+            <ListMainItem key={tableRowId} path={`${props.rootPath}/${tableRowId}`}>
                 {displayText(listItem)}
-            </ListItem>
+            </ListMainItem>
             )
         })
     }
@@ -16,13 +18,13 @@ const ListMainWrapper = (props) => {
     const displayText = (listItem) => {
         return props.propertiesToDisplay.map(value => {
             return(
-            <div key={`${listItem.id}-${value}`}>{listItem[value]}</div>
+                <div key={`${listItem.id}-${value}`}>{listItem[value]}</div>
             )
         })
     }
     
     return(
-        <ul className={`list-wrapper ${props.listClassName}`}>
+        <ul className={`list-main-wrapper ${props.listClassName}`}>
             {renderList(props.listData)}
         </ul>
     )

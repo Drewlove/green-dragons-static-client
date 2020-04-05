@@ -1,19 +1,23 @@
 import React from 'react'
-import ListMainWrapper from '../../_Common/ListWrapper'
+import ListMainWrapper from '../../_Common/ListMainWrapper'
 
 
-const UserChallengesListContainer = () => {
+const UserChallengesListContainer = (props) => {
+
+    const {users_id} = props.match.params
 
     const userChallengesList = [
-        {name: 'Challenge 1', path: `challenges/challenge-1`, id: 1}, 
-        {name: 'Challenge 2', path: `challenges/challenge-2`, id: 2},
-        {name: 'Challenge 3', path: `challenges/challenge-3`, id: 3},
-        {name: 'Challenge 4', path: `challenges/challenge-4`, id: 4}  
+        {name: 'Challenge 1', challenges_id: 1}, 
+        {name: 'Challenge 2', challenges_id: 2},
+        {name: 'Challenge 3', challenges_id: 3},
+        {name: 'Challenge 4', challenges_id: 4}  
     ]
-    
+
     return(
         <main>
             <ListMainWrapper 
+            rootPath={`/users/${users_id}/challenges`}
+            tableName='challenges'
             listData={userChallengesList}
             propertiesToDisplay={['name']} 
             listClassName='user-challenges-list'

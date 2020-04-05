@@ -6,7 +6,7 @@ import CommunityForm from './CommunityForm'
 const CommunitiesRouting = () => {
     return(
         <Switch>
-            <Route path='/communities/:community_id' component={CommunityForm} />
+            <Route path='/communities/:communities_id' component={CommunityForm} />
             <Route path='/communities' component={CommunitiesListContainer} />
         </Switch>
         )

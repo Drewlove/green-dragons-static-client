@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ListWrapper from './ListWrapper'
+import Listwrapper from './ListMainWrapper'
 
 describe('List Main Wrapper', () => {
     it('renders without crashing', () => {
@@ -8,7 +8,7 @@ describe('List Main Wrapper', () => {
         const list = [{name: 'test 1', id: 1}, {name: 'test 2', id: 2}]
         const propertiesToDisplay = ['name']
         ReactDOM.render(
-            <ListWrapper listData={list} propertiesToDisplay={propertiesToDisplay} />,
+            <ListMainWrapper listData={list} propertiesToDisplay={propertiesToDisplay} />,
             div
         )
         ReactDOM.unmountComponentAtNode(div)

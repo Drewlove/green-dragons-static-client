@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const ModalContentLinksWrapper = (props) => {
+const ModalContentLinkswrapper = (props) => {
 
     const handleClick = () => {
         props.toggleModalDisplay()
@@ -18,4 +18,4 @@ const ModalContentLinksWrapper = (props) => {
     )
 }
 
-export default ModalContentLinksWrapper
+export default ModalContentLinkswrapper

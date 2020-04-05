@@ -1,3 +1,5 @@
+/* color: #2F9400 */
+
 *{
   margin: 0px; 
 }
@@ -73,35 +75,37 @@ form .user-form-communities-subcommunity-wrapper-label{
   width: auto; 
 }
 
-.list-wrapper{
+.list-main-wrapper{
   padding: 0px;
   margin: 10px;
-}
-
-.list-item{
-  margin: 10px auto; 
   list-style: none; 
-  border: 1px solid black; 
-  min-width: 150px; 
-  max-width: 500px; 
-  height: 50px; 
-  line-height: 50px; 
-  border-radius: 5px; 
 }
 
-.list-item a{
+.list-main-item{
   display: flex;
-  margin-left: 10px;
-  justify-content: space-between;
+  height: 60px;
+  line-height: 60px;
+  margin: 10px auto;
+  border: 1px solid black;
+  min-width: 150px;
+  max-width: 500px;
+  border-radius: 5px;
 }
 
-.list-item:hover{
+.list-main-item a{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.list-main-item:hover{
   box-shadow: 2px 2px 2px black; 
   cursor: pointer; 
   color: gray; 
 }
 
-.list-item div{
+.list-main-item div{
   margin: 0px 20px; 
 }
 
@@ -167,7 +171,54 @@ nav .active{
   text-align: center;
 }
 
-.user-nav-tabs{
+.users-list-item{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  border: 1px solid black;
+  min-width: 150px;
+  max-width: 500px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.users-list-item-links-wrapper{
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.users-list-item-link:hover .users-list-item-link-tooltip{
+  visibility: initial; 
+
+}
+
+.users-list-item-link-icon{
+  display: block;
+  height: 40px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.users-list-item-link-tooltip{
+  visibility: hidden; 
+  background-color: green;
+  color: white;
+  line-height: 20px;
+  margin-top: 2px;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+.users-list-item-name{
+  margin-left: 10px;
+  width: 100%;
+  max-width: 175px;
+}
+
+/* .user-nav-tabs{
   width: 400px;
   display: flex;
   justify-content: space-around;
@@ -184,4 +235,4 @@ nav .active{
 .user-nav-tabs .active{
   background-color: lightgrey;
   color: white;
-}
+} */

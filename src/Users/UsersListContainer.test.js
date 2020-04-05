@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import UsersListContainer from './UsersListContainer'
+import UsersListwrapper from './UsersListwrapper'
 
-describe('Users List Container', () => {
+describe('Users List wrapper', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <UsersListContainer />, 
+            <UsersListwrapper />, 
             div
         )
         ReactDOM.unmountComponentAtNode(div)

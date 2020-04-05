@@ -1,18 +1,20 @@
 import React from 'react'
-import ListWrapper from '../_Common/ListWrapper'
+import ListMainWrapper from '../_Common/ListMainWrapper'
 
 const CommunitiesListContainer = () => {
     
     const communitiesList = [
-        {name: 'Community 1', path: '/communities/community-1', id: 1}, 
-        {name: 'Community 2', path: '/communities/community-2', id: 2},
-        {name: 'Community 3', path: '/communities/community-3', id: 3},
-        {name: 'Community 4', path: '/communities/community-4', id: 4}  
+        {name: 'Community 1', communities_id: 1}, 
+        {name: 'Community 2', communities_id: 2},
+        {name: 'Community 3', communities_id: 3},
+        {name: 'Community 4', communities_id: 4}  
     ]
     
     return(
         <main>
-            <ListWrapper 
+            <ListMainWrapper
+            rootPath='/communities'
+            tableName='communities'
             listData={communitiesList}
             propertiesToDisplay={['name']} 
             listClassName='communities-list'
