@@ -13,72 +13,6 @@ button:focus{
   outline: none; 
 }
 
-form{
-  max-width: 350px;
-  margin: 0px auto; 
-  border-radius: 5px; 
-  margin-top: 25px; 
-  padding: 10px; 
-}
-
-form .button-wrapper{
-  display: flex; 
-  justify-content: space-between;
-  margin-top: 25px;
-}
-
-form button{
-  background-color: lightgray; 
-  font-size: 18px; 
-}
-
-form .button-save{
-  margin-left: auto; 
-}
-
-form button:hover{
-  cursor: pointer;
-}
-
-form .input-wrapper{
-  margin-top: 10px; 
-  display: flex; 
-}
-
-form label{
-  width: 100px; 
-}
-
-form .radio{
-  width: 25px;
-}
-
-form .radio-wrapper{
-  display: flex; 
-  align-items: center; 
-}
-
-form input, textarea, select{
-  border: 1px solid black; 
-  width: 150px; 
-}
-
-form .user-form-communities-wrapper{
-  margin-top: 10px; 
-}
-
-form .user-form-communities-subcommunity-wrapper{
-  padding: 5px; 
-}
-
-form .user-form-communities-subcommunity-wrapper-input{
-  width: auto; 
-}
-
-form .user-form-communities-subcommunity-wrapper-label{
-  width: auto; 
-}
-
 .communities-list-container{
   display: flex;
   flex-direction: column;
@@ -159,6 +93,92 @@ form .user-form-communities-subcommunity-wrapper-label{
 .communities-list-item-subcommunities-list-item-link{
   width: 100%;
   display: block;
+}
+
+form{
+  max-width: 350px;
+  margin: 0px auto; 
+  border-radius: 5px; 
+  margin-top: 25px; 
+  padding: 10px; 
+}
+
+form .button-wrapper{
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+form button{
+  background-color: lightgray; 
+  font-size: 18px; 
+}
+
+form .button-save{
+  margin-left: auto; 
+}
+
+form button:hover{
+  cursor: pointer;
+}
+
+form .input-wrapper{
+  margin-top: 10px; 
+  display: flex; 
+}
+
+form label{
+  width: 100px; 
+}
+
+form .radio{
+  width: 25px;
+}
+
+form .radio-wrapper{
+  display: flex; 
+  align-items: center; 
+}
+
+form input, textarea, select{
+  border: 1px solid black; 
+  width: 150px; 
+}
+
+form .user-form-communities-wrapper{
+  margin-top: 10px; 
+}
+
+form .user-form-communities-subcommunity-wrapper{
+  padding: 5px; 
+}
+
+form .user-form-communities-subcommunity-wrapper-input{
+  width: auto; 
+}
+
+form .user-form-communities-subcommunity-wrapper-label{
+  width: auto; 
+}
+
+.home-page-header{
+  text-align: center; 
+}
+
+.home-page-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page-list{
+  margin-left: 100px;
+  padding: 0px;
+}
+
+.home-page-main{
+  margin-top: 25px; 
+  font-size: 18px; 
 }
 
 .list-main-wrapper{

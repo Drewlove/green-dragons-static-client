@@ -14,18 +14,20 @@ const UserChallengesListContainer = (props) => {
     ]
 
     return(
-        <main>
-        <header className='user-challenge-entries-challenge-title'>
-            <h1>{userChallengeEntriesList[0].challengeName}</h1>
-        </header>
-        <ListMainWrapper
-        rootPath={`/users/${users_id}/user-challenges`}
-        tableName='user_challenges'
-        listData={userChallengeEntriesList}
-        propertiesToDisplay={['date', 'entry']} 
-        listClassName='user-challenge-entries-list'
-        />
-        </main>
+        <>
+            <header className='user-challenge-entries-challenge-title'>
+                <h1>{userChallengeEntriesList[0].challengeName}</h1>
+            </header>
+            <main>
+            <ListMainWrapper
+            rootPath={`/users/${users_id}/user-challenges`}
+            tableName='user_challenges'
+            listData={userChallengeEntriesList}
+            propertiesToDisplay={['date', 'entry']} 
+            listClassName='user-challenge-entries-list'
+            />
+            </main>
+        </>
         )
 }
 
