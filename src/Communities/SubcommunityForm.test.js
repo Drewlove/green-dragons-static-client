@@ -1,17 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter} from 'react-router-dom'
-import UsersListContainer from './UsersListContainer'
+import SubcommunityForm from './SubcommunityForm'
 
-describe('Users List wrapper', () => {
+describe('SubcommunityForm', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <BrowserRouter>
-                <UsersListContainer />
-            </BrowserRouter>, 
+            <SubcommunityForm />,
             div
         )
         ReactDOM.unmountComponentAtNode(div)
     })
 })
+

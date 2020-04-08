@@ -16,7 +16,8 @@ class Nav extends Component{
     render(){
         return(
             <nav>
-                <NavLink activeClassName='active' to='/Home'>Home</NavLink>
+                <div className='nav-wrapper'>
+                <NavLink activeClassName='active' to='/home'>Home</NavLink>
                 <NavLink activeClassName='active' to='/challenges'>Challenges</NavLink>
                 <NavLink activeClassName='active' to='/communities'>Communities</NavLink>
                 <NavLink activeClassName='active' to='/users'>Users</NavLink>
@@ -27,6 +28,7 @@ class Nav extends Component{
                     <ModalContentLinksWrapper  toggleModalDisplay={() => this.toggleModalDisplay()}/>
                 </Modal> 
                 : null}
+                </div>
             </nav>  
         )
     }

@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter} from 'react-router-dom'
-import UsersListContainer from './UsersListContainer'
+import HomePage from './HomePage'
 
-describe('Users List wrapper', () => {
+describe('HomePage', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div')
         ReactDOM.render(
-            <BrowserRouter>
-                <UsersListContainer />
-            </BrowserRouter>, 
+            <HomePage/>,
             div
         )
         ReactDOM.unmountComponentAtNode(div)

@@ -1,6 +1,6 @@
 import React from 'react'
+import {withRouter} from 'react-router-dom'
 import ListMainWrapper from '../../_Common/ListMainWrapper'
-
 
 const UserChallengesListContainer = (props) => {
 
@@ -26,4 +26,4 @@ const UserChallengesListContainer = (props) => {
         )
 }
 
-export default UserChallengesListContainer
+export default withRouter(UserChallengesListContainer)

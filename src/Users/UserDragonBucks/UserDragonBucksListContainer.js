@@ -1,4 +1,5 @@
 import React from 'react'
+import {withRouter} from 'react-router-dom'
 import ListMainWrapper from '../../_Common/ListMainWrapper'
 
 const UserDragonBucksListContainer = (props) => {
@@ -25,4 +26,4 @@ const UserDragonBucksListContainer = (props) => {
         )
 }
 
-export default UserDragonBucksListContainer
+export default withRouter(UserDragonBucksListContainer)
