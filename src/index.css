@@ -9,6 +9,10 @@ a{
   color: black; 
 }
 
+button:focus{
+  outline: none; 
+}
+
 form{
   max-width: 350px;
   margin: 0px auto; 
@@ -213,16 +217,16 @@ form .user-form-communities-subcommunity-wrapper-label{
   float: right; 
 }
 
-.modal-content-links-wrapper{
+.new-button-modal-content-wrapper{
   
 }
 
-.modal-content-link{
+.new-button-modal-content-link{
   display: block; 
   padding: 5px; 
 }
 
-.modal-content-link.indent{
+.new-button-modal-content-link.indent{
   margin-left: 25px; 
 }
 
@@ -269,6 +273,7 @@ nav .active{
   position: sticky;
   z-index: 0; 
   top: 50px;
+  margin-top: 10px; 
   background-color: white;
   text-align: center;
 }

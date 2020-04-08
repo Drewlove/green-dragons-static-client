@@ -19,7 +19,7 @@ const UserDragonBucksListContainer = (props) => {
             rootPath={`/users/${users_id}/user-dragon-bucks`}
             tableName='user_dragon_bucks'
             listData={userDragonBucksList}
-            propertiesToDisplay={['amount', 'date']} 
+            propertiesToDisplay={['date', 'amount']} 
             listClassName='user-dragon-bucks-list'
             />
         </main>
