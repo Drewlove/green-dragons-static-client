@@ -33,7 +33,7 @@ const UsersListContainer = () => {
                         </Link>
                         <Link className='users-list-item-link-transactions' to={`/users/${key.id}/dragon-bucks`}>
                             <div >$100.00</div>
-                            <p className='users-list-item-link-tooltip'>Transactions</p>
+                            <p className='users-list-item-link-tooltip'>Bank</p>
                         </Link>
                     </div>
                 </li>

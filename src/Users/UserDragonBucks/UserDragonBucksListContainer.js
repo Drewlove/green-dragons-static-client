@@ -14,6 +14,10 @@ const UserDragonBucksListContainer = (props) => {
     ]
     
     return(
+        <>
+        <header>
+            <h2>First Name Last Name</h2>
+        </header>
         <main>
             <ListMainWrapper
             rootPath={`/users/${users_id}/user-dragon-bucks`}
@@ -23,6 +27,7 @@ const UserDragonBucksListContainer = (props) => {
             listClassName='user-dragon-bucks-list'
             />
         </main>
+        </>
         )
 }
 

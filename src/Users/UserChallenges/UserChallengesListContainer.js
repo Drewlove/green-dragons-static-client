@@ -14,15 +14,20 @@ const UserChallengesListContainer = (props) => {
     ]
 
     return(
-        <main>
-            <ListMainWrapper 
-            rootPath={`/users/${users_id}/challenges`}
-            tableName='challenges'
-            listData={userChallengesList}
-            propertiesToDisplay={['name']} 
-            listClassName='user-challenges-list'
-            />
-        </main>
+        <>
+            <header>
+                <h2>First Name Last Name</h2>
+            </header>
+            <main>
+                <ListMainWrapper 
+                rootPath={`/users/${users_id}/challenges`}
+                tableName='challenges'
+                listData={userChallengesList}
+                propertiesToDisplay={['name']} 
+                listClassName='user-challenges-list'
+                />
+            </main>
+        </>
         )
 }
 

@@ -44,19 +44,24 @@ const UserFormCommunities = () => {
     }
 
     return(
-        <main>
-            <form className='user-form-communities'>
-                <fieldset>
-                <legend>
-                    <h2>Communities</h2>
-                </legend>
-                {renderCommunities()}          
-                <section className='button-wrapper'>
-                    <button className='button-save'>Save</button>
-                </section>
-            </fieldset>
-            </form>
-        </main>
+        <>
+            <header>
+                <h2>First Name Last Name</h2>
+            </header>
+            <main>
+                <form className='user-form-communities'>
+                    <fieldset>
+                    <legend>
+                        <h2>Communities</h2>
+                    </legend>
+                    {renderCommunities()}          
+                    <section className='button-wrapper'>
+                        <button className='button-save'>Save</button>
+                    </section>
+                </fieldset>
+                </form>
+            </main>
+        </>
     )
 }
 

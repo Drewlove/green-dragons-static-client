@@ -161,14 +161,11 @@ form .user-form-communities-subcommunity-wrapper-label{
   width: auto; 
 }
 
-.home-page-header{
+header{
   text-align: center; 
 }
 
 .home-page-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .home-page-list{
@@ -178,13 +175,26 @@ form .user-form-communities-subcommunity-wrapper-label{
 
 .home-page-main{
   margin-top: 25px; 
-  font-size: 18px; 
+}
+
+.home-page-main a{
+  color: green; 
+}
+
+.home-page-main>p{
+  font-size: 21px;
+  margin: 10px;
+}
+
+.home-page-main li{
+  font-size: 21px; 
 }
 
 .list-main-wrapper{
   padding: 0px;
-  margin: 50px 10px;
-  list-style: none; 
+  margin: 25px auto;
+  list-style: none;
+  width: 95%;
 }
 
 .list-main-item{
@@ -310,17 +320,14 @@ nav .active{
 
 .users-list-item-links-wrapper{
   display: flex;
-  align-items: center; 
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin-top: 10px;
+  min-width: 220px;
 }
 
 .users-list-item-link:hover .users-list-item-link-tooltip{
-  visibility: initial; 
-}
-
-.users-list-item-link-transactions:hover .users-list-item-link-tooltip{
   visibility: initial; 
 }
 
@@ -330,19 +337,14 @@ nav .active{
   margin: auto;
 }
 
-.users-list-item-link-transactions{
-  margin-top: 20px;
-  text-align: center;
+.users-list-item-link-tooltip{
+  display: none; 
 }
 
-.users-list-item-link-tooltip{
-  visibility: hidden; 
-  background-color: green;
-  color: white;
-  line-height: 20px;
-  margin-top: 5px;
-  padding: 0px 5px;
-  border-radius: 5px;
+.users-list-item-link-transactions{
+  margin-top: 20px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 .users-list-item-name{
@@ -350,6 +352,25 @@ nav .active{
   width: 100%;
   min-width: 75px;
 }
+
+@media only screen and (min-width: 650px) {
+  .users-list-item-link-tooltip{
+    display: block; 
+    visibility: hidden; 
+    background-color: green;
+    color: white;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 0px 5px;
+    border-radius: 5px;
+  }
+
+  .users-list-item-link-transactions:hover .users-list-item-link-tooltip{
+    visibility: initial; 
+  }
+}
+
+
 
 /* .user-nav-tabs{
   width: 400px;
